@@ -1,5 +1,5 @@
-const { handlerFailure, handlerCompleted, handlerStalled } = require('./handler')
-const { connectQueue } = require('./config')
+const { handlerFailure, handlerCompleted, handlerStalled } = require('./controller/handler')
+const { connectQueue } = require('./controller/config')
 const path = require('path')
 
 const nameQueue = 'ORDERS-MESSAGE-QUEUE'

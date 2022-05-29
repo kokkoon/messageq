@@ -1,4 +1,4 @@
-const { connectQueue } = require('./config')
+const { connectQueue } = require('./controller/config')
 const bodyParser = require("body-parser");
 
 const jobOptions = {
