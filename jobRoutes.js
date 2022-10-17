@@ -23,6 +23,7 @@ module.exports = app => {
             const data = {
                 message: req.body.message
             }
+            console.log("data: ", data.message)
             init(data).then(resdata => {
                 console.info(`Job ID ${resdata.id}: "${resdata.data.message}" added to ${resdata.queue.name}`)
                 res.send("your message was sent successfully.")
