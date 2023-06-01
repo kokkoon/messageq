@@ -8,7 +8,7 @@ const jobOptions = {
     attempts: 3 // attempt if job is error retry 3 times
 };
 
-const nameQueue = 'ORDERS-MESSAGE-QUEUE'
+const nameQueue = 'ORDER-QUEUE1'
 
 const init = async (data) => {
     return await connectQueue(nameQueue).add(data, jobOptions)

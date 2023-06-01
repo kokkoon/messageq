@@ -1,5 +1,5 @@
 const { connectQueue } = require('./config')
-const nameQueue = 'ORDERS-MESSAGE-QUEUE'
+const nameQueue = 'ORDER-QUEUE1'
 const cases = connectQueue(nameQueue)
 
 const handlerCompleted = (job) => {
